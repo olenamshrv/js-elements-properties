@@ -1,0 +1,21 @@
+<div class='card {{#if gray}}card--gray{{/if}}'>
+
+  <div class='card__info'>
+    <div class='card__badges'>
+      <span class='card__badge card__badge--orange'>
+        Важливо
+      </span>
+      <span class='card__badge card__badge--pink'>
+        Нова
+      </span>
+    </div>
+    <span class='card__date'>
+      {{date}}
+    </span>
+  </div>
+
+  <p class='card__text {{#unless gray}}card__text--light{{/unless}}'>
+    {{text}}
+  </p>
+
+</div>

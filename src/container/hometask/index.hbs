@@ -1,0 +1,72 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+{{! 
+<main class='main'> }}
+
+{{! <header class='header'>
+    <button class='header__button'>
+      <img
+        src='/svg/header_back.svg'
+        alt='Go back'
+        width='24px'
+        height='24px'
+      />
+    </button>
+    <button class='header__button'>
+      <img
+        src='/img/header_avatar.jpg'
+        alt='Avatar'
+        width='24px'
+        height='24px'
+      />
+    </button>
+  </header>
+
+  <h1 class='title title--bottom-margin'>
+    Коммьюніті
+  </h1> }}
+
+{{!-- <section class='tabs'>
+
+    {{#with data}}
+
+      <div class='tabs__header'>
+        {{#each tabs}}
+          <button class='tab__title {{#unless isActive}}tab__title--inactive{{/unless}}'>
+            {{name}}
+          </button>
+        {{/each}}
+      </div>
+
+      {{#each tabs}}
+        {{#if isActive}}
+          <img src="/img/community.png" alt="Community">
+
+          {{#with info}}
+            <h2 class="info__title">
+              {{title}}
+            </h2> 
+
+            <p class="info__text">
+              {{text}}
+            </p>
+          {{/with}}
+
+          <button class="tab__button">
+            {{button.text}}
+          </button>
+        {{/if}}
+      {{/each}}
+
+    {{/with}}
+
+  </section> --}}
+
+{{! </main> }}
+
+{{!
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}

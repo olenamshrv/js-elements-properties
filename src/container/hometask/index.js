@@ -1,7 +1,7 @@
 import {
   createElement,
   createHeader,
-  createCardList,
+  createTabs,
 } from '../../script/layout'
 
 const body = document.querySelector('body')
@@ -15,5 +15,6 @@ const main = document.querySelector('.main')
 const header = createHeader()
 
 main.append(header)
-main.append(createElement('h1', 'title', 'Мій блог'))
-main.append(createCardList())
+main.append(createElement('h1', 'title', 'Коммьюніті'))
+
+main.append(createTabs())

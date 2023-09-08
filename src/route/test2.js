@@ -10,7 +10,7 @@ const Test = require('../class/test')
 // router.get Створює нам один ентпоїнт
 
 // ↙️ тут вводимо шлях (PATH) до сторінки
-router.get('/test', function (req, res) {
+router.get('/test2', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   // ↙️ cюди вводимо назву файлу з сontainer
@@ -21,7 +21,7 @@ router.get('/test', function (req, res) {
     component: ['heading'],
 
     // вказуємо назву сторінки
-    title: 'Назва сторінки3434',
+    title: 'Назва сторінки',
     // ... сюди можна далі продовжувати додавати потрібні технічні дані, які будуть використовуватися в layout
 
     // вказуємо дані,

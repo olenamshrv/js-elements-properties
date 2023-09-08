@@ -1,0 +1,68 @@
+@use '../../style' as s;
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: s.space(2);
+
+	padding: s.space(3);
+
+	border-radius: 10px;
+}
+
+.card--gray {
+	background-color: s.color(light);
+}
+
+.card--white {
+	border-radius: 10px;
+	border: 1px solid s.color(border);
+}
+
+.card__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card__badges {
+	display: flex;
+	justify-content: space-between;
+	gap: s.space(2);
+	margin-right: s.space(2);
+}
+
+.card__badge {
+	text-align: center;
+	border-radius: 100px;
+	padding: s.space(2) s.space(3);
+
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.card__badge--orange {
+	background-color: #F7E9E1;
+	color: #F46F17;
+}
+
+.card__badge--pink {
+	background-color: #F6E8EF;
+	color: #EF5DA8;
+}
+
+.card__date {
+	color: s.color(gray-medium);
+	font-size: 14px;
+}
+
+.card__text {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 150%; 
+	color: s.color(dark);
+}
+
+.card__text--light {
+	color: s.color(gray-medium);
+}

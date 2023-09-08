@@ -1,0 +1,69 @@
+@use '../../style' as s;
+
+.title--bottom-margin {
+	margin-bottom: s.space(1);
+}
+
+.tabs {
+	display: flex;
+	flex-direction: column;
+	gap: s.space(5);
+}
+
+.tabs__header {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: stretch;
+	text-align: center;
+}
+
+.tab__title {
+	color: s.color(dark-2);
+	font-size: 16px;
+	font-weight: 500;
+	border-bottom: 2px solid s.color(dark-2);
+	padding-bottom: s.space(3);
+	text-decoration: none;
+	transition: opacity 0.7s;
+
+	&:hover {
+		opacity: 0.7
+	}
+}
+
+.tab__title--inactive {
+	color: s.color(gray-medium);
+	border-bottom: 2px solid s.color(border);
+}
+
+.info__title {
+	color: s.color(dark-2);
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.info__text {
+	color: s.color(dark);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.tab__button {
+	background-color: s.color(orange);
+	border-radius: 10px;
+	border-color: s.color(orange);
+	padding: s.space(4) s.space(10);
+
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 700;
+
+	transition: opacity 0.7s;
+
+	&:hover {
+		opacity: 0.7
+	}
+}
+
